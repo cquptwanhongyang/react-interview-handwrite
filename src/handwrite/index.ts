@@ -1,10 +1,13 @@
 /**
- * 手写题统一出口（骨架文件）。
+ * 手写题统一出口。
  *
- * TODO: 实现完成后在此统一导出，例如：
+ * 已实现：
+ * - debounce：防抖，支持 leading / trailing / cancel / flush / pending
+ *
+ * TODO: 其余题目实现完成后按同样方式导出，例如：
  *   export { default as MyPromise } from './promise/MyPromise'
  *   export { default as EventEmitter } from './pubsub/EventEmitter'
- *   export { debounce } from './debounce/debounce'
  *   export { throttle } from './throttle/throttle'
  */
-export {}
+export { debounce, debounce as default } from './debounce/debounce'
+export type { DebouncedFunction, DebounceOptions } from './debounce/debounce'
