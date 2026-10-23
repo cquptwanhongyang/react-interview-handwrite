@@ -1,12 +1,11 @@
-import HandwritePlayground from './components/HandwritePlayground'
-import { ChatPage } from './sseUI'
+import CounterPage from './demo/redux-counter/CounterPage';
 
 function App() {
   return (
     <main>
-      <ChatPage />
+      <CounterPage />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
